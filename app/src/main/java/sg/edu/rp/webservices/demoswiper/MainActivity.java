@@ -2,15 +2,14 @@ package sg.edu.rp.webservices.demoswiper;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
+import java.util.Random;
 
-
-import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -59,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     int nextPage = vPager.getCurrentItem() + 1;
                     vPager.setCurrentItem(nextPage, true);
                 }
+
             }
         });
 
